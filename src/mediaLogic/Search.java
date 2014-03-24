@@ -6,6 +6,8 @@
 
 package mediaLogic;
 
+import java.util.Collection;
+
 /**
  *
  * @author Andrew
@@ -13,23 +15,25 @@ package mediaLogic;
 public class Search implements interfaces.SearchInterface{
 
     @Override
-    public Object searchByName(String name) {
+    public Object searchByName(String name, Collection folders) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Object searchByDate(String date) {
+    public Object searchByDate(String date, Collection folders) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Object searchBySize(Object size) {
+    public Object searchBySize(Object size, Collection folders) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Object searchByLength(Object e) {
+    public Object searchByLength(Object e, Collection folders) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+
     
 }

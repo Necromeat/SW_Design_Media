@@ -6,14 +6,16 @@
 
 package interfaces;
 
+import java.util.Collection;
+
 /**
  *
  * @author Andrew
  */
 public interface SearchInterface<E> {
-    public E searchByName(String name);
-    public E searchByDate(String date);
-    public E searchBySize(E size);
-    public E searchByLength(E e);
+    public E searchByName(String name, Collection folders);
+    public E searchByDate(String date, Collection folders);
+    public E searchBySize(E size, Collection folders);
+    public E searchByLength(E e, Collection folders);
     
 }

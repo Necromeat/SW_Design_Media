@@ -6,16 +6,17 @@
 
 package interfaces;
 
-import java.util.Collection;
+import java.util.Iterator;
+
+
 
 /**
  *
  * @author Andrew
  */
 public interface SearchInterface<E> {
-    public E searchByName(String name, Collection folders);
-    public E searchByDate(String date, Collection folders);
-    public E searchBySize(E size, Collection folders);
-    public E searchByLength(E e, Collection folders);
+    
+    public Iterable<E> search(FilterInterface<E> filter, Iterable<E> iterable);
+    public Iterator<E> search(FilterInterface<E> filter, Iterator<E> iterator);
     
 }

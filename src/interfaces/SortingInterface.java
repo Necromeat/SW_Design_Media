@@ -12,10 +12,10 @@ package interfaces;
  */
 public interface SortingInterface<E> {
     
-    public E[] sortByAlphabet(E[] e);
-    public E[] sortByDate(E[] e);
-    public E[] sortBySize(E[] e);
-    public E[] sortByLength(E[] e);
+    public < E extends Comparable<E> >E[] sortByAlphabet(E[] e);
+    public < E extends Comparable<E> >E[] sortByDate(E[] e);
+    public < E extends Comparable<E> >E[] sortBySize(E[] e);
+    public < E extends Comparable<E> > E[] sortByLength(E[] e);
     
     
 }
